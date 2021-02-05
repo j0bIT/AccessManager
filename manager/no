@@ -1,0 +1,91 @@
+
+    </div>
+
+        <div id="menu_wrapper">
+        <form id="menu" action="?login=1" method="post">
+            <h1 id="headline">Login</h1>
+            <div class="input_info">Benutzername</div>
+            <input class="input" type="text" size="40" maxlength="250" name="benutzername"><br><br>
+
+            <div class="input_info">Passwort</div>
+            <input class="input" type="password" size="40" maxlength="250" name="passwort"><br>
+            <input class="button" type="submit" value="Abschicken">
+
+    </div>
+
+    body {
+    font-family: 'Arial';
+    font-size: 3vw;
+    font-weight: normal;
+    background-color: midnightblue;
+    color: white;
+}
+
+#headline {
+    text-align: center;
+    color: white;
+}
+
+#menu_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#menu {
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    border-radius: 1vw;
+    border: 0.3vw solid white;
+    color: white;
+    background-color: transparent;
+    padding: 1vw;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.button:focus {
+    outline: 0;
+}
+
+.input {
+    width: 20vw;
+    border-radius: 1vw;
+    border: 0.3vw solid white;
+    color: white;
+    background-color: transparent;
+    padding: 1vw;
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+.input:focus {
+    outline: 0;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input_info {
+    width: 40vw;
+}
+
+
+<div id="menu_wrapper">
+        <form id="menu" action="?manage=1" method="post">
+
+            <div class="input_info">Minuten</div>
+            <input class="input" type="text" size="40" maxlength="250" name="minutes"><br><br>
+            <div class="input_info">Stunden</div>
+            <input class="input" type="text" size="40" maxlength="250" name="hours"><br><br>
+            <div class="input_info">Tage</div>
+            <input class="input" type="text" size="40" maxlength="250" name="days"><br><br>
+            <input class="button" type="submit" value="Festlegen">
+
+</form>
